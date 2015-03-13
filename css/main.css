@@ -1,0 +1,74 @@
+html{
+  box-sizing: border-box;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+}
+
+header{
+  background-color: #330099;
+  margin: 0;
+  padding: 1em, 0em, 0em, 0em;
+}
+
+.robot{
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
+
+.headleft {
+  position: absolute;
+  width: 125px;
+  right:50%;
+  transition: all 250ms linear;
+  top: 0px;
+
+}
+
+.robot:hover .headleft{
+  transform: translateX(-50px);
+}
+
+.headright {
+  position: absolute;
+  left: 50%;
+  width: 125px;
+  transition: all 250ms linear;
+  top: 0px;
+}
+
+.robot:hover .headright {
+  transform: translateX(50px);
+}
+
+.brain {
+  position: absolute;
+  width: 46px;
+  left: 43%;
+  top: 48px;
+  transition: all 250ms linear;
+}
+.robot:hover .brain{
+  transform: translateY(-20px);
+}
+.body {
+  width: 320px;
+  margin-top: 36px;
+}
+h1{
+  background-color: navy;
+  padding: 1em;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: -.25em;
+  position: absolute;
+  width: 100%;
+  font-style: italic;
+}
